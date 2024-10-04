@@ -2,7 +2,7 @@
     "name": "chat-widget",
     "version": "1.0.0",
     "description": "A customizable chat widget for LINE and phone contact",
-    "main": "src/index.js",
+    "main": "src/chatWidget.js",
     "scripts": {
       "build": "webpack",
       "deploy": "wrangler publish",
@@ -10,7 +10,7 @@
     },
     "dependencies": {},
     "devDependencies": {
-      "@cloudflare/wrangler": "^1.19.0",
+      "@cloudflare/wrangler": "^1.21.0",
       "webpack": "^5.58.1",
       "webpack-cli": "^4.9.0"
     }
