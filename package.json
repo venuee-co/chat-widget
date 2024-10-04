@@ -2,11 +2,16 @@
     "name": "chat-widget",
     "version": "1.0.0",
     "description": "A customizable chat widget for LINE and phone contact",
-    "main": "index.js",
+    "main": "src/index.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "build": "webpack",
+      "deploy": "wrangler publish",
+      "dev": "wrangler dev"
     },
-    "keywords": ["chat", "widget", "line", "phone", "contact"],
-    "author": "pongnares chuthong",
-    "license": "MIT"
+    "dependencies": {},
+    "devDependencies": {
+      "@cloudflare/wrangler": "^1.19.0",
+      "webpack": "^5.58.1",
+      "webpack-cli": "^4.9.0"
+    }
   }
