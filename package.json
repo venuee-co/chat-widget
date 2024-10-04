@@ -1,0 +1,12 @@
+{
+    "name": "chat-widget",
+    "version": "1.0.0",
+    "description": "A customizable chat widget for LINE and phone contact",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": ["chat", "widget", "line", "phone", "contact"],
+    "author": "pongnares chuthong",
+    "license": "MIT"
+  }
