@@ -24,7 +24,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           environment: production
-          secrets: |
-            CF_ACCOUNT_ID
         env:
           CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
