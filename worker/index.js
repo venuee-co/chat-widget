@@ -10,17 +10,7 @@ async function handleRequest(request) {
     return new Response('Not Found', { status: 404 });
   }
 
-  const script = `
-    ${chatWidget.toString()}
-    // Initialize the widget
-    (function() {
-      const widget = ChatWidget({
-        lineId: 'your-default-line-id',
-        phoneNumber: 'your-default-phone-number'
-      });
-      widget.init();
-    })();
-  `
+  const script = chatWidget.toString()
 
   return new Response(script, {
     headers: {
