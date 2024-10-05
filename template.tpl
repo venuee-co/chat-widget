@@ -1,22 +1,9 @@
 ___TERMS_OF_SERVICE___
 
-By using this template, you agree to the following terms:
-
-1. Usage: This Chat Widget template is provided for use with Google Tag Manager. You are responsible for ensuring that your use of this template complies with all applicable laws and regulations, including those related to data privacy and protection.
-
-2. Modifications: You may modify this template to suit your needs, but you do so at your own risk. The original creator of this template is not responsible for any issues arising from modifications.
-
-3. Third-party Services: This template integrates with third-party services (Line and phone calls). You are responsible for complying with the terms of service of these third-party providers.
-
-4. Data Collection and Privacy: You must ensure that your use of this Chat Widget complies with data protection laws and that you have obtained necessary consents from your website visitors for data collection and processing.
-
-5. No Warranty: This template is provided "as is" without any warranties, express or implied. The creator of this template is not responsible for any damages or losses resulting from its use.
-
-6. Support: While efforts will be made to maintain and update this template, there is no guarantee of ongoing support or updates.
-
-7. Liability: Your use of this template is at your own risk. The creator of this template shall not be liable for any direct, indirect, incidental, special, or consequential damages resulting from the use or inability to use this template.
-
-By using this template, you acknowledge that you have read, understood, and agree to these terms. If you do not agree with these terms, do not use this template.
+By creating or modifying this file you agree to Google Tag Manager's Community
+Template Gallery Developer Terms of Service available at
+https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+Google may provide), as modified from time to time.
 
 
 ___INFO___
