@@ -1,6 +1,6 @@
 name = "chat-widget"
 main = "worker/index.js"  # Updated to reflect the correct file path
-account_id = "38bb07baa14506cf0f869e5e299d5196"
+account_id = "${CF_ACCOUNT_ID}"
 workers_dev = true
 compatibility_date = "2023-10-04"
 
