@@ -99,15 +99,28 @@ ___TEMPLATE_PARAMETERS___
 ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 const injectScript = require('injectScript');
-const createArgumentsQueue = require('createArgumentsQueue');
 const log = require('logToConsole');
+const callInWindow = require('callInWindow');
+const setInWindow = require('setInWindow');
+const createQueue = require('createQueue');
+
+log('Chat Widget script started');
 
 const url = 'https://lib.venuee-performance.com/chat-widget.js';
+
+// Create a queue for ChatWidget calls
+const chatWidgetQueue = createQueue('ChatWidget');
+
+// Set up the ChatWidget function
+setInWindow('ChatWidget', function() {
+  log('ChatWidget function called with arguments:', arguments);
+  chatWidgetQueue(Array.prototype.slice.call(arguments));
+}, true);
 
 injectScript(url, onSuccess, onFailure);
 
 function onSuccess() {
-  log('Chat Widget script loaded successfully.');
+  log('Chat Widget script loaded successfully');
   
   const config = {
     lineUrl: data.lineUrl,
@@ -118,23 +131,27 @@ function onSuccess() {
     lineColor: data.lineColor,
     phoneColor: data.phoneColor
   };
-  
-  // Create a queue for ChatWidget calls
-  const chatWidget = createArgumentsQueue('ChatWidget', 'ChatWidget.q');
-  
-  // Push the initialization to the queue
-  chatWidget(config, 'init');
 
-  log('Chat Widget init');
-  
+  log('Config prepared:', config);
+
+  // Call ChatWidget with config
+  callInWindow('ChatWidget', config);
+  log('ChatWidget called with config');
+
+  // Call ChatWidget init
+  callInWindow('ChatWidget', 'init');
+  log('ChatWidget init called');
+
+  log('Chat Widget initialization process completed');
   data.gtmOnSuccess();
 }
 
 function onFailure() {
-  log('Chat Widget script load failed.');
+  log('Chat Widget script failed to load');
   data.gtmOnFailure();
 }
 
+log('Chat Widget script ended');
 
 ___WEB_PERMISSIONS___
 

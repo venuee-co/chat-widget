@@ -22,17 +22,18 @@ Chat Widget เป็น JavaScript library ที่ช่วยให้คุ
 หลังจากเพิ่ม script แล้ว คุณสามารถเริ่มใช้งาน Chat Widget ได้ดังนี้:
 
 ```javascript
+<script src="https://lib.venuee-performance.com/chat-widget.js"></script>
 <script>
-  const widget = ChatWidget({
-    lineUrl: 'your-line-id',
-    phoneNumber: 'your-phone-number',
-    position: 'bottom-right',
-    marginBottom: '20px',
-    marginRight: '20px',
-    lineColor: '#00B900',
-    phoneColor: '#007bff'
+  var chatWidget = new ChatWidget({
+    lineUrl: "YOUR_LINE_URL",
+    phoneNumber: "YOUR_PHONE_NUMBER",
+    position: "bottom-right",
+    marginBottom: "25px",
+    marginRight: "25px",
+    lineColor: "#00B900",
+    phoneColor: "#FF9c00"
   });
-  widget.init();
+  chatWidget.init();
 </script>
 ```
 
