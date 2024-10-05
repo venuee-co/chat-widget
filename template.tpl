@@ -124,6 +124,8 @@ function onSuccess() {
   
   // Push the initialization to the queue
   chatWidget(config, 'init');
+
+  log('Chat Widget init');
   
   data.gtmOnSuccess();
 }

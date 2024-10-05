@@ -63,6 +63,7 @@
       }
 
       document.body.appendChild(container);
+      console.log("Chat widget initialized");
     }
 
     function createButton(type, href, svgContent, altText, bgColor) {
