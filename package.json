@@ -1,15 +1,16 @@
 {
-    "name": "chat-widget",
-    "version": "1.0.0",
-    "description": "A customizable chat widget for LINE and phone contact",
-    "main": "src/chatWidget.js",
-    "scripts": {
-        "build": "webpack",
-        "deploy": "wrangler publish",
-        "dev": "wrangler dev"
-    },
-    "devDependencies": {
-        "webpack": "^5.58.1",
-        "webpack-cli": "^4.9.0"
-    }
+  "name": "chat-widget",
+  "version": "1.0.0",
+  "description": "A customizable chat widget for LINE and phone contact",
+  "main": "src/chatWidget.js",
+  "scripts": {
+    "build": "webpack",
+    "deploy": "wrangler publish",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
+    "wrangler": "^3.80.0"
+  }
 }
