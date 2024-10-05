@@ -18,6 +18,7 @@ By using this template, you agree to the following terms:
 
 By using this template, you acknowledge that you have read, understood, and agree to these terms. If you do not agree with these terms, do not use this template.
 
+
 ___INFO___
 
 {
