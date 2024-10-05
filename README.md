@@ -24,7 +24,7 @@ Chat Widget เป็น JavaScript library ที่ช่วยให้คุ
 ```javascript
 <script>
   const widget = ChatWidget({
-    lineId: 'your-line-id',
+    lineUrl: 'your-line-id',
     phoneNumber: 'your-phone-number',
     position: 'bottom-right',
     marginBottom: '20px',
@@ -38,7 +38,7 @@ Chat Widget เป็น JavaScript library ที่ช่วยให้คุ
 
 ## ตัวเลือกการกำหนดค่า
 
-- `lineId`: ID ของบัญชี LINE ของคุณ
+- `lineUrl`: ID ของบัญชี LINE ของคุณ
 - `phoneNumber`: หมายเลขโทรศัพท์ที่ต้องการให้ติดต่อ
 - `position`: ตำแหน่งของ widget (เช่น 'bottom-right', 'bottom-left', 'top-right', 'top-left')
 - `marginBottom`: ระยะห่างจากด้านล่างของหน้าจอ

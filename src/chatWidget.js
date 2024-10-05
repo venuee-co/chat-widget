@@ -10,7 +10,7 @@
 
   function ChatWidget(options) {
     const defaultOptions = {
-      lineId: "",
+      lineUrl: "",
       phoneNumber: "",
       position: "bottom-right",
       marginBottom: "25px",
@@ -39,10 +39,10 @@
           z-index: 10001;
         `;
 
-      if (mergedOptions.lineId) {
+      if (mergedOptions.lineUrl) {
         const lineLink = createButton(
           "line",
-          `https://line.me/R/ti/p/@${mergedOptions.lineId}`,
+          mergedOptions.lineUrl,
           createLineSVG(),
           "เพิ่มเพื่อน",
           mergedOptions.lineColor
