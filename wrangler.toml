@@ -1,11 +1,9 @@
 name = "chat-widget"
-type = "webpack"
+main = "worker/index.js"  # Updated to reflect the correct file path
 account_id = "38bb07baa14506cf0f869e5e299d5196"
 workers_dev = true
-route = ""
-zone_id = "bf3d450d0e2f47a437b78276cb5ba144"
 compatibility_date = "2023-10-04"
 
 [env.production]
 workers_dev = false
-route = "lib.venuee-performance.com/chat-widget.js"
+routes = ["lib.venuee-performance.com/chat-widget.js"]
