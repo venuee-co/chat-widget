@@ -1,5 +1,5 @@
 homepage: "https://www.venuee-performance.com"
 documentation: "https://github.com/venuee-co/chat-widget"
 versions:
-  - sha: 40246ba13650a73954e5fea3ea1161b3a09d0d16
+  - sha: fc9cd8438d6075886942b007b739698b8a484720
     changeNotes: Initial release.
