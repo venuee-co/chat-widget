@@ -1,4 +1,4 @@
-import chatWidget from '../src/chatWidget.min.js';
+import chatWidget from '../src/chatWidget';
 
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
