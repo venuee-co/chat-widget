@@ -7,6 +7,7 @@ Chat Widget เป็น JavaScript library ที่ช่วยให้คุ
 - ปุ่มติดต่อ LINE ที่ปรับแต่งได้
 - ปุ่มโทรศัพท์ที่ปรับแต่งได้
 - ปุ่ม WhatsApp ที่ปรับแต่งได้
+- ปุ่ม Facebook Messenger ที่ปรับแต่งได้
 - รองรับการใช้งานผ่าน Cloudflare Workers
 - ปรับแต่งตำแหน่งและสีได้
 
@@ -29,12 +30,14 @@ Chat Widget เป็น JavaScript library ที่ช่วยให้คุ
     lineUrl: "YOUR_LINE_URL",
     phoneNumber: "YOUR_PHONE_NUMBER",
     whatsappNumber: "YOUR_WHATSAPP_NUMBER",
+    messengerUrl: "YOUR_MESSENGER_URL",
     position: "bottom-right",
     marginBottom: "25px",
     marginRight: "25px",
     lineColor: "#00B900",
     phoneColor: "#FF9c00",
-    whatsappColor: "#25D366"
+    whatsappColor: "#25D366",
+    messengerColor: "#0084FF"
   });
   chatWidget.init();
 </script>
@@ -45,12 +48,14 @@ Chat Widget เป็น JavaScript library ที่ช่วยให้คุ
 - `lineUrl`: ID ของบัญชี LINE ของคุณ
 - `phoneNumber`: หมายเลขโทรศัพท์ที่ต้องการให้ติดต่อ
 - `whatsappNumber`: หมายเลข WhatsApp (รูปแบบ: 66812345678)
+- `messengerUrl`: ลิงก์ Facebook Messenger (แนะนำรูปแบบ: https://m.me/<page_or_username>)
 - `position`: ตำแหน่งของ widget (เช่น 'bottom-right', 'bottom-left', 'top-right', 'top-left')
 - `marginBottom`: ระยะห่างจากด้านล่างของหน้าจอ
 - `marginRight`: ระยะห่างจากด้านขวาของหน้าจอ
 - `lineColor`: สีของปุ่ม LINE
 - `phoneColor`: สีของปุ่มโทรศัพท์
 - `whatsappColor`: สีของปุ่ม WhatsApp
+- `messengerColor`: สีของปุ่ม Messenger
 
 ## การพัฒนา
 
